@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('level', function (Blueprint $table) {
+        Schema::create('m_level', function (Blueprint $table) {
             $table->id('level_id');
-            $table->varchar('level_kode', 20)->unique();
-            $table->varchar('nama', 100);
+            $table->string('level_kode', 20)->unique();
+            $table->string('nama', 100);
             $table->timestamps();
         });
     }
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('level');
+        Schema::dropIfExists('m_level');
     }
 };
