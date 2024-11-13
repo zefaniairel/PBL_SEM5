@@ -75,7 +75,7 @@
                     // searchable: true, jika ingin kolom ini bisa dicari
                     searchable: true
                 }, {
-                    data: "level_nama",
+                    data: "nama",
                     className: "",
                     orderable: true,
                     searchable: true

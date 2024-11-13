@@ -8,7 +8,7 @@ class LevelModel extends Model
     use HasFactory;
     protected $table = "m_level";
     protected $primaryKey = "level_id";
-    protected $fillable = ['level_kode','level_nama'];
+    protected $fillable = ['level_kode','nama'];
     public function user(): HasMany {
         return $this->hasMany(User::class);
     }

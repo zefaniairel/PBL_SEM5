@@ -21,9 +21,9 @@
                 <div class="form-group row">
                     <label class="col-1 control-label col-form-label">Nama Level</label>
                     <div class="col-11">
-                        <input type="text" class="form-control" id="level_nama" name="level_nama" value="{{ old('level_nama') }}"
+                        <input type="text" class="form-control" id="nama" name="nama" value="{{ old('nama') }}"
                             required>
-                        @error('level_nama')
+                        @error('nama')
                             <small class="form-text text-danger">{{ $message }}</small>
                         @enderror
                     </div>
